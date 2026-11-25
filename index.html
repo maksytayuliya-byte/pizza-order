@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Замовлення піци</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#e5dcff,#fff0f5);
+padding: 25px;
+color: #49365d;
+}
+.container {
+max-width: 600px;
+margin: auto;
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 5px 20px #bbb;
+}
+h1 {
+text-align: center;
+color: #8059b5;
+}
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+input, select, textarea {
+width: 100%;
+padding: 11px;
+margin-top: 6px;
+border: 1px solid #cbbbe9;
+border-radius: 8px;
+box-sizing: border-box;
+}
+button {
+width: 100%;
+padding: 14px;
+margin-top: 22px;
+background: #8059b5;
+color: white;
+border: none;
+border-radius: 9px;
+font-size: 17px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🍕 Замовлення піци</h1>
+<p>Смачна піца прямо до вашого дому!</p>
+
+<form action="mailto:maksyta.yuliya@gmail.com" method="post" enctype="text/plain">
+
+<label>Ваше ім'я:</label>
+<input type="text" name="Ім'я" required>
+
+<label>Номер телефону:</label>
+<input type="tel" name="Телефон" required>
+
+<label>Адреса доставки:</label>
+<input type="text" name="Адреса" required>
+
+<label>Оберіть піцу:</label>
+<select name="Піца">
+<option>Маргарита</option>
+<option>Пепероні</option>
+<option>Чотири сири</option>
+<option>Гавайська</option>
+<option>М'ясна</option>
+</select>
+
+<label>Розмір піци:</label>
+<select name="Розмір">
+<option>Мала</option>
+<option>Середня</option>
+<option>Велика</option>
+</select>
+
+<label>Кількість:</label>
+<input type="number" name="Кількість" min="1" value="1">
+
+<label>Додаткові інгредієнти:</label>
+<textarea name="Інгредієнти" rows="3"></textarea>
+
+<label>Спосіб оплати:</label>
+<select name="Оплата">
+<option>Готівкою</option>
+<option>Банківською карткою при отриманні</option>
+</select>
+
+<label>Коментар до замовлення:</label>
+<textarea name="Коментар" rows="3"></textarea>
+
+<button type="submit">Замовити піцу 🍕</button>
+</form>
+</div>
+</body>
+</html>
